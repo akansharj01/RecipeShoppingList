@@ -23,8 +23,6 @@ constructor(private shoppingListService: ShoppingListService) {}
             new Ingredients('French Fries', 8)
        ])
     ];
-
-    recipeSelected = new EventEmitter<RecipesModel>();
     
     public getRecipes() {
         return this.recipes.slice();
