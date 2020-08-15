@@ -10,7 +10,6 @@ export class DropdownListDirectiveDirective {
   @HostBinding('class.open') isOpen = false;
 
   @HostListener('click') toggleOpen() {
-    console.log('isOpen : ' + this.isOpen);
     this.isOpen = !this.isOpen;
   }
 }
